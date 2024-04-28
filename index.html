@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>ProLoad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="./assets/plugins/bootstrap-icons-1.11.1/bootstrap-icons-1.11.1/bootstrap-icons.css"
+    />
+    <!-- bootstrap main library -->
+    <link
+      rel="stylesheet"
+      href="./assets/plugins/bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+    <!-- main styleSheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./assets/css/main.css"
+    />
+  </head>
+  <body>
+    <div
+      class="d-flex justify-content-start p-2 container-fluid"
+      style="flex-wrap: nowrap"
+    >
+      <aside class="sidebar position-relative">
+        <div class="logo d-flex justify-content-start align-items-center">
+          <span
+            class="logo-frame d-flex ms-1 align-items-center justify-content-center me-2"
+            ><i class="bi bi-cloud-upload-fill fs-2 text-start"></i
+          ></span>
+          <h1 class="fs-3" id="logo">PRO<span class="fw-bold">LOAD</span></h1>
+        </div>
+        <ul class="list p-0 d-flex flex-column py-3 border-bottom">
+          <li class="list-item py-3 px-3" id="list-item">
+            <div class="btn-group">
+              <a
+                type="button"
+                class="btn"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="text-start">
+                  <i class="main-icon bi bi-house-door"></i>
+                  <span class="items">Dashboard</span>
+                  <i class="bi bi-caret-down-fill drop-icon"></i>
+                </div>
+              </a>
+
+              <ul class="dropdown-menu mt-2 py-2" id="popUp">
+                <li class="pop-item" id="pop-item">
+                  <a class="dropdown-item" href="index.html" id="request"
+                    ><i class="bi bi-check2-circle me-2"></i>
+                    <p>Homepage</p></a
+                  >
+                </li>
+                <li class="pop-item" id="pop-item">
+                  <a class="dropdown-item" href="ajaxReq.html"
+                    ><i class="bi bi-check2-circle me-2"></i>
+                    <p>activities</p></a
+                  >
+                </li>
+                <li class="pop-item" id="pop-item">
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-check2-circle me-2"></i>
+                    <p>activity</p></a
+                  >
+                </li>
+                <li class="pop-item" id="pop-item">
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-check2-circle me-2"></i>
+                    <p>lot or serial</p></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="list-item py-3 px-3" id="list-item">
+            <div class="btn-group">
+              <a
+                type="button"
+                class="btn"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="text-start">
+                  <i class="main-icon bi bi-bar-chart"></i>
+
+                  <span class="items"> Revenue</span>
+                  <i class="bi bi-caret-down-fill drop-icon"></i>
+                </div>
+              </a>
+
+              <ul class="dropdown-menu mt-2 py-2" id="popUp">
+                <li class="pop-item" id="pop-item">
+                  <a class="dropdown-item" href="index.html" id="request"
+                    ><i class="bi bi-check2-circle me-2"></i>
+                    <p>Homepage</p></a
+                  >
+                </li>
+                <li class="pop-item" id="pop-item">
+                  <a class="dropdown-item" href="ajaxReq.html"
+                    ><i class="bi bi-check2-circle me-2"></i>
+                    <p>activities</p></a
+                  >
+                </li>
+                <li class="pop-item" id="pop-item">
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-check2-circle me-2"></i>
+                    <p>activity</p></a
+                  >
+                </li>
+                <li class="pop-item" id="pop-item">
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-check2-circle me-2"></i>
+                    <p>lot or serial</p></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="list-item py-3 px-3" id="list-item">
+            <div class="btn-group">
+              <a
+                type="button"
+                class="btn"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="text-start">
+                  <i class="main-icon bi bi-bell"></i>
+
+                  <span class="items"> Notification</span>
+                  <i class="bi bi-caret-down-fill drop-icon"></i>
+                </div>
+              </a>
+
+              <ul class="dropdown-menu mt-2 py-2" id="popUp">
+                <li class="pop-item" id="pop-item">
+                  <a class="dropdown-item" href="#" id="request"
+                    ><i class="bi bi-check2-circle me-2"></i>
+                    <p>Homepage</p></a
+                  >
+                </li>
+                <li class="pop-item" id="pop-item">
+                  <a class="dropdown-item" href="ajaxReq.html"
+                    ><i class="bi bi-check2-circle me-2"></i>
+                    <p>activities</p></a
+                  >
+                </li>
+                <li class="pop-item" id="pop-item">
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-check2-circle me-2"></i>
+                    <p>activity</p></a
+                  >
+                </li>
+                <li class="pop-item" id="pop-item">
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-check2-circle me-2"></i>
+                    <p>lot or serial</p></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="list-item py-3 px-3" id="list-item">
+            <div class="btn-group">
+              <a
+                type="button"
+                class="btn"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="text-start">
+                  <i class="main-icon bi bi-pie-chart"></i>
+
+                  <span class="items"> Analytics</span>
+                  <i class="bi bi-caret-down-fill drop-icon"></i>
+                </div>
+              </a>
+
+              <ul class="dropdown-menu mt-2 py-2" id="popUp">
+                <li class="pop-item" id="pop-item">
+                  <a class="dropdown-item" href="#" id="request"
+                    ><i class="bi bi-check2-circle me-2"></i>
+                    <p>Homepage</p></a
+                  >
+                </li>
+                <li class="pop-item" id="pop-item">
+                  <a class="dropdown-item" href="ajaxReq.html"
+                    ><i class="bi bi-check2-circle me-2"></i>
+                    <p>activities</p></a
+                  >
+                </li>
+                <li class="pop-item" id="pop-item">
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-check2-circle me-2"></i>
+                    <p>activity</p></a
+                  >
+                </li>
+                <li class="pop-item" id="pop-item">
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-check2-circle me-2"></i>
+                    <p>lot or serial</p></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="list-item py-3 px-3" id="list-item">
+            <div class="btn-group">
+              <a
+                type="button"
+                class="btn"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <div class="text-start">
+                  <i class="main-icon bi bi-wallet"></i>
+
+                  <span class="items"> Wallets</span>
+                  <i class="bi bi-caret-down-fill drop-icon"></i>
+                </div>
+              </a>
+
+              <ul class="dropdown-menu mt-2 py-2" id="popUp">
+                <li class="pop-item" id="pop-item">
+                  <a class="dropdown-item" href="#" id="request"
+                    ><i class="bi bi-check2-circle me-2"></i>
+                    <p>Homepage</p></a
+                  >
+                </li>
+                <li class="pop-item" id="pop-item">
+                  <a class="dropdown-item" href="ajaxReq.html"
+                    ><i class="bi bi-check2-circle me-2"></i>
+                    <p>activities</p></a
+                  >
+                </li>
+                <li class="pop-item" id="pop-item">
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-check2-circle me-2"></i>
+                    <p>activity</p></a
+                  >
+                </li>
+                <li class="pop-item" id="pop-item">
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-check2-circle me-2"></i>
+                    <p>lot or serial</p></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="second-list p-0 py-2">
+          <li class="list-item py-3 px-3" id="list-item">
+            <div>
+              <i class="main-icon bi bi-box-arrow-in-left"></i>
+              <span class="items">Logout</span>
+            </div>
+          </li>
+          <li class="list-item theme py-3 px-3" id="list-item">
+            <div>
+              <div id="theme">
+                <i class="main-icon bi bi-moon"></i>
+                <span class="items">Switch Theme</span>
+              </div>
+              <span class="toggler rounded-pill">
+                <span class="toggler-circle rounded-circle"></span>
+              </span>
+            </div>
+          </li>
+        </ul>
+      </aside>
+
+      <div class="w-100">
+        <nav class="nav-top col py-2 pb-4 nav nav-bar p-0">
+          <div class="container-fluid">
+            <div
+              class="d-flex justify-content-end justify-content-md-between px-2 align-items-center"
+            >
+              <span class="sidebar-toggle rounded-circle">
+                <i class="bi bi-arrow-left fs-4"></i>
+              </span>
+              <form
+                action="
+        "
+                style="width: 35%"
+              >
+                <input
+                  type="search"
+                  id="searchInput"
+                  class="search border-0 py-2 px-3 w-100 d-none d-md-inline-block"
+                  placeholder=" &#xF52A; Search"
+                  style="font-family: bootstrap-icons"
+                />
+              </form>
+              <div class="d-flex">
+                <div class="dropdown px-2 px-md-3">
+                  <button
+                    class="btn chat rounded-circle notif-bell"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="bi bi-chat-fill"></i>
+                  </button>
+                  <ul class="dropdown-menu px-2 px-md-3">
+                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="dropdown">
+                  <a
+                    class="d-flex align-items-center"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <div class="profile rounded-circle">
+                      <img src="./assets/image/person2.png" alt="" />
+                    </div>
+                    <p class="px-2">AbdallahSafi</p>
+                    <i class="bi bi-caret-down-fill drop-icon"></i>
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <main class="p-3 rounded d-grid" id="response-section">
+          <span class="spinner" id="spinner">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+              <circle
+                fill="#685CFE"
+                stroke="#685CFE"
+                stroke-width="9"
+                r="15"
+                cx="40"
+                cy="65"
+              >
+                <animate
+                  attributeName="cy"
+                  calcMode="spline"
+                  dur="2"
+                  values="65;135;65;"
+                  keySplines=".5 0 .5 1;.5 0 .5 1"
+                  repeatCount="indefinite"
+                  begin="-.4"
+                ></animate>
+              </circle>
+              <circle
+                fill="#685CFE"
+                stroke="#685CFE"
+                stroke-width="9"
+                r="15"
+                cx="100"
+                cy="65"
+              >
+                <animate
+                  attributeName="cy"
+                  calcMode="spline"
+                  dur="2"
+                  values="65;135;65;"
+                  keySplines=".5 0 .5 1;.5 0 .5 1"
+                  repeatCount="indefinite"
+                  begin="-.2"
+                ></animate>
+              </circle>
+              <circle
+                fill="#685CFE"
+                stroke="#685CFE"
+                stroke-width="9"
+                r="15"
+                cx="160"
+                cy="65"
+              >
+                <animate
+                  attributeName="cy"
+                  calcMode="spline"
+                  dur="2"
+                  values="65;135;65;"
+                  keySplines=".5 0 .5 1;.5 0 .5 1"
+                  repeatCount="indefinite"
+                  begin="0"
+                ></animate>
+              </circle>
+            </svg>
+          </span>
+        </main>
+      </div>
+    </div>
+    <script src="./assets/plugins/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/plugins/jQuery/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
